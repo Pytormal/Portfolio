@@ -1,0 +1,35 @@
+// mobile design first (Small Mobile)
+
+header {
+  .flex-column;
+  align-items: flex-end;
+  padding: 2rem 1rem;
+  width: auto;
+  margin: 2px;
+  div {
+    padding: 2rem 0.2rem;
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media @Mmobile {
+    div {
+      padding: 2rem 1rem;
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+main {
+  height: 120rem;
+}
