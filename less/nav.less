@@ -1,13 +1,8 @@
 nav {
-  nav{
-    .top-nav{
-      
-      border: solid pink;
-    }
-  }
+     
   // Navigation menu
   h1{
-      font-size: 1rem;
+      font-size: 1.2rem;
   }
   .top-nav {
     background-color: @web-color;
@@ -22,6 +17,7 @@ nav {
     // (nested) Hide the links inside the navigation menu (except for logo/home)
     #myLinks {
       display: none;
+     
     }
 
     //Style the hamburger menu
@@ -33,6 +29,7 @@ nav {
       top: 0;
       background-color: @web-color;
     }
+    
     a {
       color: @a-text-color;
       padding: 1rem 1.2rem;
@@ -54,6 +51,20 @@ nav {
     background-color: @web-color;
     width: auto;
     height: 200px;
-    .flex-row;
+    .flex-column;
+
+    a{
+      display:inline-block;
+    }
+
+    .fa-do{
+       font-size:4rem;
+      // .flex-row;
+      width:80%;
+      padding:2rem;
+      .flex-evenly;
+     
+    }
   }
 }
+
