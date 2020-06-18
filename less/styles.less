@@ -36,12 +36,12 @@ nav {
 
 // bios block
 header {
-  
   .flex-column;
   align-items: flex-end;
   padding: 2rem 1rem;
   width: auto;
   margin: 2px;
+  
 
   div {
     padding: 2rem 0.2rem;
@@ -51,7 +51,8 @@ header {
       padding: 1rem;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      text-align: center;
     }
   }
 
@@ -71,16 +72,13 @@ header {
 
 // content
 body {
-
   height: 100vh;
   img {
-    
     display: block;
   }
- 
+
   .horizontal-scroll img:hover {
     transform: scale(1.45);
-    
   }
 }
 
@@ -231,7 +229,7 @@ body {
   display: block;
   position: relative;
   width: 12px;
-  
+
   @media @Ddesktop {
     display: none;
   }
@@ -253,7 +251,6 @@ body {
   text-decoration: none;
   text-shadow: 0rem 0.1rem 0rem #b23e35;
   transition: 0.5s;
-
 }
 ::-webkit-scrollbar-track:hover {
   background: linear-gradient(to bottom, #2e0702 40%, #ac12e479 70%);
@@ -276,8 +273,6 @@ body {
   text-decoration: none;
   text-shadow: 0rem 0.1rem 0rem #b23e35;
   transition: 0.5s;
-  
-  
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
