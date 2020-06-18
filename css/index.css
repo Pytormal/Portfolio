@@ -188,7 +188,7 @@ body img {
   display: block;
 }
 body .horizontal-scroll img:hover {
-  border: 2rem solid crimson;
+  transform: scale(1.45);
 }
 .page2 {
   display: flex;
@@ -314,14 +314,14 @@ body .horizontal-scroll img:hover {
 }
 /* width */
 ::-webkit-scrollbar {
-  height: 100px;
+  height: 12px;
   overflow: auto;
   direction: ltr;
   display: block;
   position: relative;
   width: 12px;
 }
-@media (max-width: 425px) {
+@media (max-width: 1024px) {
   ::-webkit-scrollbar {
     display: none;
   }
@@ -690,21 +690,15 @@ main #myCarousel .carousel-inner img {
   }
 }
 @media (min-width: 1024px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
   .header div {
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
   }
   .header div h2 {
     font-size: 2.5rem;
   }
   .header div p {
     text-align: center;
-    width: 38rem;
+    width: 35rem;
     font-size: 1.6rem;
   }
 }
@@ -776,16 +770,16 @@ main #myCarousel .carousel-inner img {
     font-size: 4rem;
   }
 }
+@media (min-width: 768px) {
+  .page2 .about-me-bio2 {
+    width: 40vw;
+  }
+}
 @media (min-width: 1024px) {
   .page2 .about-me-bio2 {
     font-size: 2.4rem;
     margin: 0 auto;
     width: 90vw;
-  }
-}
-@media (min-width: 768px) {
-  .page2 .about-me-bio2 {
-    width: 40vw;
   }
 }
 @media (max-width: 768px) {
@@ -798,17 +792,22 @@ main #myCarousel .carousel-inner img {
     display: block;
   }
   main .horizontal-scroll img {
-    width: 10rem;
+    width: 12rem;
   }
 }
 @media (min-width: 1024px) {
   main .horizontal-scroll img {
-    width: 15rem;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
   main .horizontal-scroll img {
-    width: 28rem;
+    width: 75%;
+    margin: auto;
+  }
+  main .horizontal-scroll p {
+    text-align: center;
   }
 }
 @media (min-width: 2560px) {

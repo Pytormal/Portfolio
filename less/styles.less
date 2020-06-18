@@ -1,14 +1,13 @@
 // mobile design first (Small Mobile)
-nav {  
-  
+nav {
   #myLinks:hover {
-      cursor:url(myBall.cur),auto;
+    cursor: url(myBall.cur), auto;
     a:hover {
       padding: 2rem;
       color: green;
       font-size: 2em;
       font-weight: bolder;
-      cursor:none;
+      cursor: none;
 
       background: linear-gradient(
         to right,
@@ -31,12 +30,13 @@ nav {
     -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg)
       saturate(9.9);
     filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
-    cursor:none;
+    cursor: none;
   }
 }
 
 // bios block
 header {
+  
   .flex-column;
   align-items: flex-end;
   padding: 2rem 1rem;
@@ -71,16 +71,18 @@ header {
 
 // content
 body {
+
   height: 100vh;
-  img{
-  display:block;
+  img {
+    
+    display: block;
+  }
+ 
+  .horizontal-scroll img:hover {
+    transform: scale(1.45);
+    
+  }
 }
-.horizontal-scroll img:hover{
-border:2rem solid crimson;
-}
-}
-
-
 
 // page 2
 .page2 {
@@ -88,18 +90,18 @@ border:2rem solid crimson;
 
   .imgButton {
     .flex-column;
-width:45%;
+    width: 45%;
     img {
       width: 90%;
       height: auto;
       margin: 0 auto;
-      padding:2rem 0;
+      padding: 2rem 0;
     }
 
     p {
       text-align: center;
       width: 50%;
-      display:hidden;
+      display: hidden;
     }
   }
 
@@ -112,7 +114,7 @@ width:45%;
       text-align: center;
       font-weight: bold;
     }
-   
+
     @media @tablet {
       width: 60vw;
 
@@ -122,8 +124,6 @@ width:45%;
     }
   }
 }
-
-
 
 // button 1 "Contact Me"
 .button {
@@ -155,7 +155,7 @@ width:45%;
 // end of button 1
 
 // button 2 "My Projects"
-.button2  {
+.button2 {
   box-shadow: inset 0rem 0.1rem 0rem 0rem #572723b7;
   background: linear-gradient(to bottom, #854a45 5%, violet 100%);
   background-color: #a85f58;
@@ -185,7 +185,7 @@ width:45%;
 // end of button 2
 
 // Start of Button 3
-.button3  {
+.button3 {
   box-shadow: unset black 2rem;
   background: linear-gradient(to left, #0b62e454 5%, #f7084448 100%);
   background-color: #fffcfb00;
@@ -206,7 +206,7 @@ width:45%;
   background: linear-gradient(to right, #e2d4ebcb 10%, #9710f1fa 100%);
   background-color: #16f3e160;
   color: #c2eead;
-  transition: .6s;
+  transition: 0.6s;
 }
 .button3:active {
   position: relative;
@@ -225,14 +225,14 @@ width:45%;
 
 /* width */
 ::-webkit-scrollbar {
-  height: 100px;
+  height: 12px;
   overflow: auto;
   direction: ltr;
   display: block;
   position: relative;
   width: 12px;
-
-  @media @Llmobile {
+  
+  @media @Ddesktop {
     display: none;
   }
 }
@@ -253,6 +253,7 @@ width:45%;
   text-decoration: none;
   text-shadow: 0rem 0.1rem 0rem #b23e35;
   transition: 0.5s;
+
 }
 ::-webkit-scrollbar-track:hover {
   background: linear-gradient(to bottom, #2e0702 40%, #ac12e479 70%);
@@ -275,6 +276,8 @@ width:45%;
   text-decoration: none;
   text-shadow: 0rem 0.1rem 0rem #b23e35;
   transition: 0.5s;
+  
+  
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {

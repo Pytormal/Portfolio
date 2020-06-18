@@ -130,6 +130,7 @@ nav {
   }
 
   @media @tablet {
+    
     div {
       padding: 2rem 1rem;
 
@@ -142,10 +143,9 @@ nav {
   }
 
   @media @desktop {
-    .flex-between;
 
     div {
-      padding: 2rem 1rem;
+      padding: 2rem 0.5rem;
 
       h2 {
         font-size: 2.5rem;
@@ -153,7 +153,7 @@ nav {
 
       p {
         text-align: center;
-        width: 38rem;
+        width: 35rem;
         font-size: 1.6rem;
       }
     }
@@ -206,7 +206,7 @@ nav {
         width: 50%;
         height: auto;
       }
-       @media @Ldesktop {
+      @media @Ldesktop {
         width: 40%;
         height: auto;
       }
@@ -230,14 +230,14 @@ nav {
       }
     }
 
+    @media @tablet {
+      width: 40vw;
+    }
+
     @media @desktop {
       font-size: 2.4rem;
       margin: 0 auto;
       width: 90vw;
-    }
-
-    @media @tablet {
-      width: 40vw;
     }
   }
 }
@@ -253,19 +253,24 @@ main {
       display: block;
 
       img {
-        width: 10rem;
+        width: 12rem;
       }
     }
 
     @media @desktop {
       img {
-        width: 15rem;
+        width: 90%;
+        margin: 0 auto;
       }
     }
 
     @media @Ldesktop {
       img {
-        width: 28rem;
+        width: 75%;
+        margin: auto;
+      }
+      p {
+        text-align: center;
       }
     }
 
