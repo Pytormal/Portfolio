@@ -154,7 +154,7 @@ nav {
       p {
         text-align: center;
         width: 38rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
       }
     }
   }
@@ -191,20 +191,31 @@ nav {
 // page2 Bio text / img in 'About'
 .page2 {
   @media @tablet {
-    .flex-between-row;
+    .flex-between;
   }
+  .imgButton {
+    margin: 0 auto;
+    img {
+      @media @tablet {
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+      }
 
-  img {
-    @media @tablet {
-      margin: 2rem;
-      width: 30%;
-      height: auto;
+      @media @desktop {
+        width: 50%;
+        height: auto;
+      }
+       @media @Ldesktop {
+        width: 40%;
+        height: auto;
+      }
     }
 
-    @media @desktop {
-      margin: 0 0 2rem 5rem;
-      width: 20%;
-      height: auto;
+    p {
+      text-align: center;
+      width: 80%;
+      display: hidden;
     }
   }
 
@@ -220,7 +231,7 @@ nav {
     }
 
     @media @desktop {
-      font-size: 3rem;
+      font-size: 2.4rem;
       margin: 0 auto;
       width: 90vw;
     }
