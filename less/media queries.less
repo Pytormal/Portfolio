@@ -98,6 +98,10 @@ nav {
 
 // (Bios)
 .header {
+  .flex-column;
+@media @Ttablet {
+    .flex-evenly;
+  }
   @media @Mmobile {
     div {
       padding: 2rem 1rem;
@@ -111,8 +115,8 @@ nav {
     }
   }
 
-  @media @Lmobile {
-
+  @media @Llmobile {
+    .flex-column;
 
     div {
       padding: 2rem 1rem;
@@ -128,14 +132,15 @@ nav {
       }
     }
   }
+ 
 
   @media @tablet {
     .flex-evenly;
     div {
       padding: 2rem 1rem;
 
-        h2 {
-        font-size: 2.4rem;
+      h2 {
+        font-size: 2.2rem;
         padding: 2rem 1rem;
       }
 
@@ -148,7 +153,6 @@ nav {
   }
 
   @media @desktop {
-
     div {
       padding: 2rem 0.5rem;
 
